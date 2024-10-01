@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sftp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sftp
+  template:
+    metadata:
+      labels:
+        app: sftp
+    spec:
+      containers:
+      - name: sftp
+        image: emberstack/sftp
+        ports:
+        - containerPort: 22
+        env:
+        - name: USERS
+          value: "demo:demo:1001:1001"
+        volumeMounts:
+        - mountPath: /home
+          name: sftp-storage
+      volumes:
+      - name: sftp-storage
+        persistentVolumeClaim:
+          claimName: sftp-pv-claim

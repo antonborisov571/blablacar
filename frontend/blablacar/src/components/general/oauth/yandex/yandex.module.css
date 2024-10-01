@@ -1,0 +1,22 @@
+.authYandex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 10px;
+    font-size: 14pt;
+    cursor: pointer;
+    border: 3px solid transparent;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.authYandex:hover {
+    border: 3px solid #FC3D17;
+}

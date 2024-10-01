@@ -1,0 +1,27 @@
+.button {
+  --button-color: #00AFF5;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background-color: var(--button-color);
+  box-shadow: 0 4px 7px 0 #00000030;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: ease-in-out 200ms;
+}
+
+.button:hover {
+  --button-color: #008EC2;
+}
+
+
+.button:disabled {
+  box-shadow: none;
+  background-color: white;
+  border: 3px solid var(--button-color);
+  cursor: inherit;
+  color: var(--usually-color);
+}

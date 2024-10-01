@@ -1,0 +1,20 @@
+.publishWrapperWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.publishInfoWrapper {
+  color: hsla(189, 89%, 17%, 1);
+  font-weight: 600;
+}
+
+.publishWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.publishTitle {
+  font-size: 24px;
+}

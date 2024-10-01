@@ -1,0 +1,160 @@
+.chatWrapperWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buddyInfo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  min-width: 800px;
+  margin: 15px;
+  border: var(--hr-color) solid 4px;
+  border-radius: 16px 0 16px 0;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.chatWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 30px 150px 30px;
+  min-width: 800px;
+  gap: 20px;
+}
+
+.profileAvatar {
+  border-radius: 50%;
+}
+
+.dateSeparator {
+  display: flex;
+  justify-content: center;
+  color: hsla(189, 13%, 50%, 1);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ourMessageImage {
+  display: flex;
+  align-self: end;
+  gap: 15px;
+}
+
+.ourMessageWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  border-bottom-right-radius: 0;
+  padding: 8px 8px 8px 12px;
+  background-color: var(--usually-text-color);
+  max-width: 300px;
+}
+
+.ourMessageText {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.ourMessageTime {
+  color: hsla(189, 13%, 50%, 1);
+  font-size: 14px;
+  font-weight: 600;
+  align-self: end;
+}
+
+.ourImage {
+  align-self: end;
+}
+
+.buddyImage {
+  align-self: start;
+}
+
+.buddyMessageImage {
+  display: flex;
+  align-self: start;
+  gap: 15px
+}
+
+.buddyMessageWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  padding: 8px 12px 8px 16px;
+  background-color: hsla(0, 0%, 93%, 1);
+  max-width: 300px;
+}
+
+.buddyMessageText {
+  color: var(--usually-text-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.buddyMessageTime {
+  color: hsla(189, 13%, 50%, 1);
+  font-size: 14px;
+  font-weight: 600;
+  align-self: end;
+}
+
+.inputWrapperWrapper {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  border-top: #dbdbdb solid 2px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  min-width: 662px;
+}
+
+.input {
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  display: flex;
+  width: 100%;
+  max-width: 608px;
+  border: transparent solid 3px;
+  color: var(--usually-text-color);
+  background-color: hsla(0, 0%, 93%, 1);
+  font: var(--typical-font);
+  caret-color: hsla(197, 100%, 48%, 1);
+  margin: 16px 0;
+  padding: 16px;
+  scrollbar-width: none;
+  resize: none;
+  border-radius: 16px;
+}
+
+.input:focus {
+  border: #00AFF5 solid 3px;
+}
+
+.buttonSend {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonNone {
+  display: none;
+}

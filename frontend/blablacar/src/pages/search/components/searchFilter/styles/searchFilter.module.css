@@ -1,0 +1,28 @@
+.title {
+  font: var(--typical-font-minititle);
+  color: var(--usually-text-color);
+}
+
+.sortItem {
+  font: var(--typical-font);
+  color: var(--usually-text-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 16px;
+  padding: 0 15px 0 15px;
+  transition: var(--transition-for-button);
+}
+
+.sortItem:hover {
+  background-color: var(--hover-color-for-button);
+}
+
+.spliter {
+  border-radius: 16px;
+  border: none;
+  height: 8px;
+  background-color: var(--hr-color);
+}

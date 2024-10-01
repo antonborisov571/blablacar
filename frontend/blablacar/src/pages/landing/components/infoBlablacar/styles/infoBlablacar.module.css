@@ -1,0 +1,27 @@
+.infoWrapperWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 45px;
+  max-width: 1100px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.infoImage {
+  height: 50px;
+  margin: 30px 0 0 0;
+}
+
+.infoText {
+  color: hsla(189, 13%, 50%, 1);
+}
+
+.infoTitle {
+  color: hsla(189, 89%, 17%, 1);
+}

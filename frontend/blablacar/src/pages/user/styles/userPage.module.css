@@ -1,0 +1,120 @@
+.infoUserWrapperWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.infoUserWrapper {
+  display: flex;
+  justify-content: center;
+  min-width: 700px;
+  flex-direction: column;
+}
+
+.age {
+  font-weight: 500;
+  color: var(--typical-gray-color);
+}
+
+.spliter {
+  border-radius: 16px;
+  border: none;
+  height: 8px;
+  background-color: var(--hr-color);
+  margin: 20px 0 20px 0;
+}
+
+.infoUser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 15px;
+  transition: ease-in-out 200ms;
+  position: relative;
+}
+
+.avatarWithArrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profileAvatar {
+  border-radius: 50%;
+}
+
+.arrowIcon {
+  height: 30px;
+}
+
+.spliterMini {
+  border: none;
+  height: 4px;
+  border-radius: 16px;
+  background-color: var(--hr-color);
+  margin: 10px 20px 10px 20px;
+}
+
+.connectUser {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 16px;
+  padding: 15px;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+  color: hsla(197, 100%, 48%, 1);
+  font: var(--typical-font);
+  gap: 20px;
+}
+
+.connectUser:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+}
+
+.connectTime {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font: var(--typical-font);
+  color: var(--typical-gray-color);
+}
+
+.preferencesWrapper {
+  display: flex;
+  flex-direction: column;
+  font: var(--typical-font);
+  color: var(--typical-gray-color);
+}
+
+.titlePreferences {
+  font: var(--typical-font-minititle);
+  color: var(--usually-text-color);
+}
+
+.preferences {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+.titlePassengers {
+  text-align: center;
+  font: var(--typical-font-minititle);
+}
+
+.userName {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.countTripsDateRegistrationWrapper {
+  display: flex;
+  flex-direction: column;
+  font: var(--typical-font);
+  color: var(--typical-gray-color);
+}

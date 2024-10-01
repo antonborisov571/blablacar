@@ -1,0 +1,21 @@
+.errorWrapperWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.errorWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 700px;
+}
+
+.errorText {
+  text-align: center;
+  font-size: 22px;
+}

@@ -1,0 +1,25 @@
+.createTripWrapperWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: hsla(198, 92%, 95%, 1);
+  padding-bottom: 40px;
+}
+
+.createTripWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.createTripTitle {
+  text-align: center;
+  color: var(--usually-text-color);
+}
+
+.createTripFormImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

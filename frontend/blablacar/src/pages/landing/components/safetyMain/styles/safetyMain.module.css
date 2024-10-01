@@ -1,0 +1,25 @@
+.safetyWrapperWrapper {
+  background: hsla(189, 89%, 17%, 1);
+  margin: 25px 0 25px 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.safetyWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+}
+
+.safetyInfoWrapper {
+  color: white;
+  font-weight: 600;
+}
+
+.safetyTitle {
+  font-size: 24px;
+}

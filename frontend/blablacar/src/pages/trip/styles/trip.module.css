@@ -1,0 +1,217 @@
+.tripWrapperWrapper {
+  display: flex;
+  justify-content: center;
+  color: var(--usually-text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tripWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 700px;
+  margin: 20px 0 150px 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--usually-text-color);
+}
+
+.infoTripWrapperWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--usually-text-color);
+  position: relative;
+}
+
+.infoTripWrapper {
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 60px 40px 40px;
+  grid-row-gap: 40px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.infoTripTime{
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+}
+
+.infoTripWhereFromWrapper{
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.infoTripWhereFrom {
+  border: 2px solid var(--usually-text-color);
+  background-color: white;
+  border-radius: 9999px;
+  width: 13px;
+  height: 13px;
+}
+
+.infoTripWhereFromName{
+  grid-row: 1;
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+}
+
+.infoTripWhereWrapper{
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.infoTripWhere {
+  border: 2px solid var(--usually-text-color);
+  background-color: white;
+  border-radius: 9999px;
+  width: 13px;
+  height: 13px;
+}
+
+.infoTripWhereName{
+  grid-row: 2;
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+}
+
+.infoTripWhereFromWrapper::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  width: 5px;
+  height: 66px;
+  background-color: var(--usually-text-color);
+}
+
+.spliter {
+  border-radius: 16px;
+  border: none;
+  height: 8px;
+  background-color: var(--hr-color);
+  margin: 20px 0 20px 0;
+}
+
+.infoPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoDriver {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 15px;
+  transition: ease-in-out 200ms;
+  position: relative;
+}
+
+.infoDriver:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+}
+
+.avatarWithArrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px
+}
+
+.profileAvatar {
+  border-radius: 50%;
+}
+
+.arrowIcon {
+  height: 30px;
+}
+
+.spliterMini {
+  border: none;
+  height: 4px;
+  border-radius: 16px;
+  background-color: var(--hr-color);
+  margin: 10px 20px 10px 20px;
+}
+
+.connectDriver {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 16px;
+  padding: 15px;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+  color: hsla(197, 100%, 48%, 1);
+  font: var(--typical-font);
+  gap: 20px;
+}
+
+.connectDriver:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+}
+
+.connectTime {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font: var(--typical-font);
+  color: var(--typical-gray-color);
+}
+
+.preferencesWrapper {
+  display: flex;
+  flex-direction: column;
+  font: var(--typical-font);
+  color: var(--typical-gray-color);
+}
+
+.preferences {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+.titlePassengers {
+  text-align: center;
+  font: var(--typical-font-minititle);
+}
+
+.bookWrapper {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  border-top: #dbdbdb solid 2px;
+  padding: 10px 0 10px 0;
+}
+
+.success {
+  text-align: center;
+  font-weight: 600;
+  color: var(--good-green-color);
+}

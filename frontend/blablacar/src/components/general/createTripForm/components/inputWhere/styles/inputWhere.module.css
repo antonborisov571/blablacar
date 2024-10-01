@@ -1,0 +1,43 @@
+.whereInput {
+  display: flex;
+  width: 100%;
+  height: calc(56px - 3px * 2);
+  padding: 0 8px 0 calc(8px * 2 + 24px);
+  outline: 0 solid transparent;
+  border: none;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+  color: hsla(189, 89%, 17%, 1);
+  text-overflow: ellipsis;
+  font: inherit;
+  transition: all 200ms ease-in;
+  border-radius: 16px;
+}
+
+.whereInput:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+  border-radius: 16px;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  z-index: 4;
+  padding: 2px;
+  width: calc(100% - 2px); /* Ширина с учетом границы */
+}
+
+.suggestion {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.suggestion:hover {
+  background-color: #f0f0f0;
+}

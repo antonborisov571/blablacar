@@ -1,0 +1,21 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\user\AppData\Local\JetBrains\Rider2023.3\resharper-host\temp\Rider\vAny\CoverageData\_Blablacar.1851526407\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=83fb15a5_002D5d5a_002D436c_002Da1e7_002D511ae5d70a55/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Handle_ReturnsUserInfoResponse_WhenUserExists" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::284DFA35-3013-485D-96FF-9175F26D1CCE::net8.0::Blablacar.Tests.HandlerTests.GetUserInfoQueryHandlerTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::284DFA35-3013-485D-96FF-9175F26D1CCE::net8.0::Blablacar.Tests.HandlerTests.DeleteTripNotificationCommandHandlerTests.Handle_Success&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::284DFA35-3013-485D-96FF-9175F26D1CCE::net8.0::Blablacar.Tests.HandlerTests.GetTripsQueryHandlerTests.Handle_Success&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::284DFA35-3013-485D-96FF-9175F26D1CCE::net8.0::Blablacar.Tests.HandlerTests.GetTripsQueryHandlerTests.Handle_RequestNull&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::284DFA35-3013-485D-96FF-9175F26D1CCE::net8.0::Blablacar.Tests.HandlerTests.GetTripsQueryHandlerTests.Handle_NotFoundTrip&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:PatchUpdateUserInfoCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:PostConfirmEmailCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:PostConfirmPasswordResetCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:PostForgotPasswordCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:DeletePassengerCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:DeleteTripCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:DeleteTripNotificationCommandHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;284DFA35-3013-485D-96FF-9175F26D1CCE/d:HandlerTests/f:GetTripQueryHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

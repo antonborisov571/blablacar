@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24"
+     xmlns="http://www.w3.org/2000/svg"
+     class="kirk-icon"
+     role="img"
+     aria-hidden="true"
+     style="height: 40px; width: 40px; fill: var(--_1gzv7bhc); background: linear-gradient(92deg, rgb(46, 210, 255) 4.9%, rgb(0, 175, 245) 96%); border-radius: 50%;">
+    <g color="var(--_1gzv7bhc)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.105 5.407a.402.402 0 01.367.12.392.392 0 01.121.367 13.196 13.196 0 01-2.896 7.59 3.019 3.019 0 01-.427 3.777L12.832 19.7l-2.122-2.102H6.83a.417.417 0 01-.428-.428v-3.898l-2.101-2.107 2.438-2.419a2.97 2.97 0 013.75-.397 12.72 12.72 0 017.616-2.942zm-4.936 5.421a1.734 1.734 0 00-2.438 0L9.514 12.05a1.726 1.726 0 002.433 2.44l1.222-1.217a1.736 1.736 0 000-2.445z"
+              fill="hsla(0, 0%, 100%, 1)"></path>
+    </g>
+</svg>

@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: blablacar_database
+    ports:
+      - 5432:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 3s
+      timeout: 1s
+      retries: 5
+
+  sftp:
+    image: "emberstack/sftp"
+    ports:
+      - "2222:22"
+    environment:
+      - USERS=demo:demo:1001:1001
+    volumes:
+      - sftp_data:/home
+
+  backend:
+    image: backend:latest
+    build:
+      context: ./backend/Blablacar/
+      dockerfile: Dockerfile
+    ports:
+      - 5201:8080
+    depends_on:
+      db:
+        condition: service_healthy
+      sftp:
+        condition: service_started
+    environment:
+      - JWT__ValidAudience=Blablacar
+      - JWT__ValidIssuer=Blablacar
+      - JWT__Secret=this is my custom Secret key for authentication
+      - EmailSettings__FromName=Антон Борисов
+      - EmailSettings__EmailAddress=borisov.as2015@yandex.ru
+      - EmailSettings__Password=arigudeqaaztkkfn
+      - EmailSettings__SMTPServerHost=smtp.yandex.ru
+      - EmailSettings__SMTPServerPort=465
+      - Authentication__VK__AppId=51903164
+      - Authentication__VK__AppSecret=t1cFz2DZLq8KsxhpYPz0
+      - Authentication__VK__ServiceToken=991675219916752199167521ca9a018f9d9991699167521ff0a8c49759c08682aca5eae
+      - Authentication__VK__VkGetInfoUserUri=https://api.vk.com/method/auth.getProfileInfoBySilentToken
+      - Authentication__VK__VkApiVersion=5.199
+      - Authentication__Yandex__AppId=51e4d0a49d994b6280c3fca62af75566
+      - Authentication__Yandex__AppSecret=7ea83902a7ee421381f0b4e6be4d7e9c
+      - Sftp__Host=sftp
+      - Sftp__Port=22
+      - Sftp__User=demo
+      - Sftp__Password=demo
+      - SearchCity__Host=https://kladr-api.ru/api.php
+      - SearchCity__Token=kaeYEGATH2fbe7Q67YR6aQRySyZznBz5
+      - ConnectionStrings__DefaultConnection=Host=db;Username=postgres;Password=postgres;Database=blablacar_database
+
+  frontend:
+    build:
+      context: ./frontend/blablacar
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://backend:8080
+
+volumes:
+  db_data:
+  sftp_data:

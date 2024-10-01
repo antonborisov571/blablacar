@@ -1,0 +1,168 @@
+.searchWrapper {
+  display: block;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0px 4px 7px 0px #00000030;
+  padding: 3px;
+}
+
+.spliter {
+  border: 0 solid transparent;
+  border-left: 1px solid hsla(0, 0%, 93%, 1);
+  width: 1px;
+  height: calc(56px - 8px * 3);
+  margin: auto 3px;
+  display: block;
+}
+
+.whereFromWhere {
+  display: flex;
+  flex-direction: row;
+}
+
+.whereInputWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.whereInput {
+  display: flex;
+  width: 100%;
+  height: calc(56px - 3px * 2);
+  padding: 0 8px 0 calc(8px * 2 + 24px);
+  outline: 0 solid transparent;
+  border: none;
+  align-items: end;
+  position: relative;
+  z-index: 1;
+  color: hsla(189, 89%, 17%, 1);
+  text-overflow: ellipsis;
+  font: inherit;
+  transition: all 200ms ease-in;
+  border-radius: 16px;
+}
+
+.whereInput:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+  border-radius: 16px;
+}
+
+
+.whereIconWrapper {
+  position: absolute;
+  left: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  z-index: 3;
+}
+
+.buttonSearchWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonSearch {
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+  width: 100%;
+  height: calc(56px - 3px * 2);
+  outline: 0 solid transparent;
+  border: none;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: #00AFF5;
+  text-overflow: ellipsis;
+  font: inherit;
+  transition: all 200ms ease-in;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.buttonSearch:hover {
+  background-color: #008EC2;
+}
+
+.whereInputSuggestion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.dateInput {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.dateInput:before {
+  content: attr(placeholder) !important;
+  color: hsla(189, 89%, 17%, 1);
+  margin: 0;
+  min-width: 100px;
+  position: absolute;
+}
+
+
+.dateInput {
+  min-width: 200px;
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+  /*display: none;*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dateInput::-webkit-datetime-edit-day-field,
+.dateInput::-webkit-datetime-edit-month-field,
+.dateInput::-webkit-datetime-edit-year-field,
+.dateInput::-webkit-datetime-edit-text
+{
+  display: none;
+  content: none;
+  margin: 0;
+}
+
+.dateInput {
+  display: flex;
+  width: 100%;
+  height: calc(56px - 3px * 2);
+  padding: 0 8px 0 calc(8px * 2 + 24px);
+  outline: 0 solid transparent;
+  border: none;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  color: hsla(189, 89%, 17%, 1);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font: inherit;
+  transition: all 200ms ease-in;
+  border-radius: 16px;
+}
+
+.dateInput:hover {
+  background-color: hsla(0, 0%, 93%, 1);
+  border-radius: 16px;
+}

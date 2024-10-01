@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новое сообщение</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .code {
+            font-family: monospace;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #8B00FF;
+        }
+
+        .code-min {
+            font-weight: bold;
+            color: #8B00FF;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="title">Новое сообщение от {buddyName}</h1>
+    </div>
+    <br>
+    <div class="message">
+        <p>Здравствуйте, это <span class="code-min">Blablacar</span>!</p>
+        <p>Уведомляем вас о новом сообщение от пользователя {buddyName}:</p>
+        <p class="code">
+            {text}
+        </p>
+        <p>Время отправки: {dispatch}</p>
+    </div>
+</div>
+</body>
+</html>

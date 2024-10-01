@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: antontrs/backend:latest
+        ports:
+        - containerPort: 8080
+        env:
+          - name: JWT__ValidAudience
+            value: "Blablacar"
+          - name: JWT__ValidIssuer
+            value: "Blablacar"
+          - name: JWT__Secret
+            value: "this is my custom Secret key for authentication"
+          - name: EmailSettings__FromName
+            value: "Антон Борисов"
+          - name: EmailSettings__EmailAddress
+            value: "borisov.as2015@yandex.ru"
+          - name: EmailSettings__Password
+            value: "arigudeqaaztkkfn"
+          - name: EmailSettings__SMTPServerHost
+            value: "smtp.yandex.ru"
+          - name: EmailSettings__SMTPServerPort
+            value: "465"
+          - name: Authentication__VK__AppId
+            value: "51903164"
+          - name: Authentication__VK__AppSecret
+            value: "t1cFz2DZLq8KsxhpYPz0"
+          - name: Authentication__VK__ServiceToken
+            value: "991675219916752199167521ca9a018f9d9991699167521ff0a8c49759c08682aca5eae"
+          - name: Authentication__VK__VkGetInfoUserUri
+            value: "https://api.vk.com/method/auth.getProfileInfoBySilentToken"
+          - name: Authentication__VK__VkApiVersion
+            value: "5.199"
+          - name: Authentication__Yandex__AppId
+            value: "51e4d0a49d994b6280c3fca62af75566"
+          - name: Authentication__Yandex__AppSecret
+            value: "7ea83902a7ee421381f0b4e6be4d7e9c"
+          - name: Sftp__Host
+            value: "sftp"
+          - name: Sftp__Port
+            value: "22"
+          - name: Sftp__User
+            value: "demo"
+          - name: Sftp__Password
+            value: "demo"
+          - name: SearchCity__Host
+            value: "https://kladr-api.ru/api.php"
+          - name: SearchCity__Token
+            value: "kaeYEGATH2fbe7Q67YR6aQRySyZznBz5"
+          - name: ConnectionStrings__DefaultConnection
+            value: "Host=db;Username=postgres;Password=postgres;Database=blablacar_database"

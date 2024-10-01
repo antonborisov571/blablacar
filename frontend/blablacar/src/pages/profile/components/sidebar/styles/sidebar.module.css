@@ -1,0 +1,71 @@
+.sidebar {
+  --sidebar-width: 19rem;
+  /*--background-color: #282828;*/
+  --shadow: inset 0px 1px 3px #22200030;
+  position: absolute;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100%;
+  /*background-color: var(--background-color);*/
+  box-shadow: var(--shadow);
+  z-index: 1;
+  overflow: auto;
+}
+
+.title {
+  color: #fff;
+  font-size: 18pt;
+  font-weight: 800;
+  margin: 10px;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: lowercase;
+}
+
+.module {
+  background-color: var(--usually-color);
+  color: #fff;
+  width: calc(100% - 2.2rem);
+  height: fit-content;
+  padding: 1.1rem;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.block {
+  display: block;
+  background-color: white;
+  color: #00AFF5;
+  width: calc(100% - 2.2rem);
+  height: fit-content;
+  padding: 1.1rem;
+  font-size: 15pt;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: ease-in 200ms;
+}
+
+.block:hover {
+  color: white;
+  background-color: #00AFF5;
+}
+
+.selected {
+  display: block;
+  background-color: #383838;
+  color: #fff;
+  width: calc(100% - 2.2rem);
+  height: fit-content;
+  padding: 1.1rem;
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.completedIcon {
+  position: absolute;
+  right: 1rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
